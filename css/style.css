@@ -72,15 +72,17 @@
 .back-to-top {
   position: fixed;
   display: none;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   text-align: center;
-  line-height: 1;
-  font-size: 30px;
+  line-height: 40px;
+  font-size: 26px;
   right: 30px;
   bottom: 30px;
   transition: background 0.5s;
   z-index: 11;
+  border: 1px solid var(--primary);
+  border-radius: 5px;
 }
 
 .back-to-top i {
@@ -88,7 +90,7 @@
 }
 
 .back-to-top i:hover {
-  color: var(--dark);
+  color: var(--light);
 }
 
 .back-to-top {
