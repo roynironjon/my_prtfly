@@ -93,3 +93,40 @@
     });
 })(jQuery);
 
+
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Initialize EmailJS inside the function
+    emailjs.init("AMuPMSQYNKGGex-pC"); // Replace with your EmailJS public key
+
+    // Collect form data
+    const formData = {
+        from_name: document.getElementById('name').value, // Name field
+        from_email: document.getElementById('email').value, // Email field
+        subject: document.getElementById('subject').value, // Subject field
+        message: document.getElementById('message').value, // Message field
+    };
+    
+
+    // Use EmailJS to send the form data
+    emailjs.send("service_try3cfo", "template_0is1ubk", formData)
+        .then(function (response) {
+            console.log('SUCCESS!', response.status, response.text);
+
+            // Show success popup
+            const popup = document.getElementById('popup');
+            popup.style.display = 'block';
+
+            // Hide popup after 3 seconds
+            setTimeout(() => {
+                popup.style.display = 'none';
+            }, 3000);
+
+            // Reset the form
+            document.getElementById('contactForm').reset();
+        }, function (error) {
+            console.log('FAILED...', error);
+            alert("Failed to send the message. Please try again.");
+        });
+});

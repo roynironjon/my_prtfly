@@ -162,19 +162,19 @@
                                 <div class="skill mb-4">
                                     <div class="d-flex justify-content-between">
                                         <p class="mb-2">PHP</p>
-                                        <p class="mb-2">90%</p>
+                                        <p class="mb-2">60%</p>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <div class="skill mb-4">
                                     <div class="d-flex justify-content-between">
                                         <p class="mb-2">Laravel</p>
-                                        <p class="mb-2">75%</p>
+                                        <p class="mb-2">45%</p>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                             </div>
@@ -182,38 +182,38 @@
                                 <div class="skill mb-4">
                                     <div class="d-flex justify-content-between">
                                         <p class="mb-2">Javascript</p>
-                                        <p class="mb-2">90%</p>
+                                        <p class="mb-2">70%</p>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <div class="skill mb-4">
                                     <div class="d-flex justify-content-between">
                                         <p class="mb-2">React JS</p>
-                                        <p class="mb-2">65%</p>
+                                        <p class="mb-2">45%</p>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <div class="skill mb-4">
                                     <div class="d-flex justify-content-between">
                                         <p class="mb-2">Jquery</p>
-                                        <p class="mb-2">75%</p>
+                                        <p class="mb-2">55%</p>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
 
                                 <div class="skill mb-4">
                                     <div class="d-flex justify-content-between">
                                         <p class="mb-2">Wordpress</p>
-                                        <p class="mb-2">85%</p>
+                                        <p class="mb-2">65%</p>
                                     </div>
                                     <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <div class="skill mb-4">
@@ -398,29 +398,29 @@
                     <!-- Contact Start -->
                     <section class="py-5 wow fadeInUp" data-wow-delay="0.1s" id="contact">
                         <h1 class="title pb-3 mb-5">Contact Me</h1>
-                        <form>
+                        <form id="contactForm">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control border-0 bg-secondary" id="name" placeholder="Your Name">
+                                        <input type="text" class="form-control border-0 bg-secondary" id="name" name="from_name" placeholder="Your Name" required>
                                         <label for="name">Your Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control border-0 bg-secondary" id="email" placeholder="Your Email">
+                                        <input type="email" class="form-control border-0 bg-secondary" id="email" name="email" placeholder="Your Email" required>
                                         <label for="email">Your Email</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control border-0 bg-secondary" id="subject" placeholder="Subject">
+                                        <input type="text" class="form-control border-0 bg-secondary" id="subject" name="subject" placeholder="Subject" required>
                                         <label for="subject">Subject</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control border-0 bg-secondary" placeholder="Leave a message here" id="message" style="height: 200px"></textarea>
+                                        <textarea class="form-control border-0 bg-secondary" placeholder="Leave a message here" id="message" name="message" style="height: 200px" required></textarea>
                                         <label for="message">Message</label>
                                     </div>
                                 </div>
@@ -429,6 +429,12 @@
                                 </div>
                             </div>
                         </form>
+                        
+                        <!-- Popup for success message -->
+                        <div id="popup" style="display:none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #28a745; color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                            Message sent successfully!
+                        </div>
+                        
                     </section>
                     <!-- Contact End -->
 
@@ -477,5 +483,6 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     </body>
 </html>
