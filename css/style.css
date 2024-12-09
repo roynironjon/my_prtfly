@@ -205,22 +205,6 @@
   opacity: 1;
 }
 
-.testimonial-carousel .owl-dots {
-  margin-top: 25px;
-  text-align: center;
-}
-
-.testimonial-carousel .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 15px;
-  height: 15px;
-  background: var(--light);
-}
-
-.testimonial-carousel .owl-dot.active {
-  background: var(--primary);
-}
 
 #images{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset !important;
