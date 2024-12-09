@@ -287,3 +287,87 @@
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3), 
                 4px 4px 20px rgba(0, 0, 0, 0.1); /
 }
+
+
+
+
+
+  /* Styling for the chat box */
+  #chat-box {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 10px;
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the WhatsApp icon */
+#whatsapp-icon {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg') no-repeat center center;
+    background-size: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Additional styling for chat box and button if needed */
+#chat-header {
+    background: #25d366;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#chat-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+    border: 1px solid #dcdcdc;
+    border-radius: 20px;
+    padding: 2px;
+}
+#chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+#chat-input button {
+    padding: 10px;
+    background: #25d366;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/* Hide chat box close button */
+#close-btn {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background: #25d366;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.message_input{
+  padding: 20px 10px;
+
+}

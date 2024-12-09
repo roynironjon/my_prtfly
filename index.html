@@ -22,6 +22,7 @@
         <link href="lib/animate/animate.min.css" rel="stylesheet">
         <!-- Customized Bootstrap Stylesheet -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
     </head>
@@ -433,6 +434,25 @@
                     </section>
                     <!-- Contact End -->
 
+
+                   
+                     <!-- WhatsApp Icon -->
+                    <div id="whatsapp-icon" onclick="ChatBox()"></div>
+
+                    <!-- Chat Box -->
+                    <div id="chat-box">
+                        <button id="close-btn" onclick="closeChatBox()">X</button>
+                        <div id="chat-header">Chat with Nironjon Roy</div>
+                        <div class="message_input">
+                            <div id="chat-messages"></div>
+                            <div id="chat-input">
+                                <input type="text" id="message" placeholder="Type your message...">
+                                <button onclick="sendMessage()">Send</button>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <!-- Footer Start -->
                     <section class="wow fadeIn" data-wow-delay="0.1s" id="box_shadow_2">
                         <div class="bg-secondary text-light text-center p-5">
@@ -479,5 +499,12 @@
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <!-- Font Awesome for WhatsApp Icon -->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+        <!-- Firebase SDK -->
+        <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js"></script>
+        <script src="js/chat.js"></script>
     </body>
 </html>
