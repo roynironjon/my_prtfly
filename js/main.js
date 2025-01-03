@@ -164,3 +164,19 @@ function createSnowflake() {
 
 // Generate snowflakes at regular intervals
 setInterval(createSnowflake, 200); // Adjust interval to control the creation rate
+
+document.addEventListener("DOMContentLoaded", function () {
+    const mobileFooter = document.getElementById("mobileFooter");
+
+    window.addEventListener("scroll", function () {
+        const currentScrollY = window.scrollY;
+
+        if (currentScrollY > window.innerHeight) {
+            // Show footer if above 100vh
+            mobileFooter.classList.add("visible");
+        } else {
+            // Hide footer if below 100vh
+            mobileFooter.classList.remove("visible");
+        }
+    });
+});
