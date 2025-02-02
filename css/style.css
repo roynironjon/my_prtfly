@@ -204,13 +204,16 @@
 .portfolio-item:hover i {
   opacity: 1;
 }
-
-
-#images{
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset !important;
-  padding: 10px;
-  border-radius: 5px !important;
-  background: #00B87B;
+#images {
+	box-shadow: rgba(168, 168, 196, 0.25) 0px 30px 60px -12px inset, rgba(208, 187, 187, 0.3) 0px 18px 36px -18px inset !important;
+	padding: 15px;
+	border-radius: 50% !important;
+	background: #2C3E50;
+	height: 275px;
+	width: 275px !important;
+	border-radius: 50;
+	margin: 0 auto;
+	margin-top: 30px;
 }
 
 #snow-container {
